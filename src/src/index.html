@@ -3,12 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" maximum-scale="1.0" user-scalable="no">
-    <meta http-equiv="Content-Security-Policy"
-          content="default-src * data: gap: content: https://ssl.gstatic.com;"
-    >
+    <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: content: https://ssl.gstatic.com;">
     <title>ぷよぷよの体験をしてみよう！</title>
 </head>
-<body>
-    
+<body style="margin: 0;">
+    <!-- ステージ -->
+    <div id="stage" style="position: relative; margin: 0 auto; overflow: hidden; background: url(./img/puyo_4bg.png);"></div>
+    <!-- スコア -->
+    <div id="score" style="margin: 0 auto; overflow: hidden; text-align: right;"></div>
+    <!-- ぷよ -->
+    <div style="display: none;">
+        <img id="puyo_1" src="./img/puyo_1.png">
+        <img id="puyo_2" src="./img/puyo_2.png">
+        <img id="puyo_3" src="./img/puyo_3.png">
+        <img id="puyo_4" src="./img/puyo_4.png">
+        <img id="puyo_5" src="./img/puyo_5.png">
+        <img id="batankyu" src="./img/batankyu.png">
+        <img id="zenkeshi" src="./img/zenkeshi.png">
+        <img id="font0" src="./img/font0.png">
+        <img id="font1" src="./img/font1.png">
+        <img id="font2" src="./img/font2.png">
+        <img id="font3" src="./img/font3.png">
+        <img id="font4" src="./img/font4.png">
+        <img id="font5" src="./img/font5.png">
+        <img id="font6" src="./img/font6.png">
+        <img id="font7" src="./img/font7.png">
+        <img id="font8" src="./img/font8.png">
+        <img id="font9" src="./img/font9.png">
+    </div>
+
+    <!-- スクリプト -->
+    <script src="./js/game.js"></script>
+    <script src="./js/player.js"></script>
+    <script src="./js/puyoimage.js"></script>
+    <script src="./js/score.js"></script>
+    <script src="./js/stage.js"></script>
+    <script src="./js/config.js"></script>
 </body>
 </html>
